@@ -1,0 +1,176 @@
+/* Background colors */
+.bg-white {
+  background: #ffffff; }
+
+/* General Rules */
+body {
+  font-family: 'Martel Sans', Lato, sans-serif;
+  line-height: 1.8;
+  background: #ffffff;
+  color: black; }
+
+a {
+  text-decoration: none !important; }
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
+h1 {
+  font-family: 'Lilita One', 'Passion One', cursive;
+  font-size: 4em;
+  font-variant: small-caps; }
+
+h2 {
+  font-family: 'Lilita One', 'Passion One', cursive;
+  font-size: 2.2em; }
+
+h4,
+h3,
+p {
+  font-family: 'Martel Sans', 'Quicksand', sans-serif; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: transparent;
+  z-index: 9999;
+  border: 0;
+  font-size: 18px !important;
+  font-family: 'Open Sans', sans-serif;
+  font-variant: small-caps;
+  line-height: 1.42857143 !important;
+  border-radius: 0; }
+  .navbar a {
+    transition: 0s;
+    color: #e3ebec !important; }
+  .navbar button {
+    background: transparent !important; }
+    .navbar button .icon-bar {
+      background-color: #e3ebec !important; }
+    .navbar button.navbar-toggle {
+      border: 2px solid #e3ebec; }
+    .navbar button.collapsed {
+      border-color: transparent !important; }
+  .navbar .navbar-nav li a:hover, .navbar .navbar-nav li.active a {
+    color: black !important;
+    background-color: #e3ebec !important; }
+  .navbar .navbar-nav li.active a {
+    font-weight: bold; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.navbar {
+  z-index: 5;
+  background-color: #171717; }
+
+.jumbotron {
+  margin: 0 !important;
+  padding-top: 60px !important;
+  color: black; }
+  .jumbotron .title {
+    margin-bottom: 0; }
+    .jumbotron .title h1 {
+      text-transform: uppercase; }
+    .jumbotron .title h3 {
+      font-size: 2.3em;
+      font-variant: small-caps; }
+
+#architecture {
+  padding-top: 70px;
+  font-family: 'Martel Sans', 'Quicksand', sans-serif !important; }
+  #architecture .description {
+    padding-top: 40px;
+    font-size: 18px; }
+    #architecture .description .img-frame {
+      position: relative;
+      width: 50%;
+      float: right;
+      left: 0;
+      right: 0;
+      margin-left: 25px;
+      margin-right: 0; }
+      #architecture .description .img-frame img {
+        border: 1px solid black;
+        box-shadow: black 0px 0px 20px 1px;
+        height: auto !important; }
+        #architecture .description .img-frame img:nth-of-type(1) {
+          position: relative;
+          z-index: 1;
+          width: 85%;
+          left: 15px;
+          top: 0; }
+        #architecture .description .img-frame img:nth-of-type(2) {
+          position: absolute;
+          z-index: 2;
+          width: 85%;
+          left: 15%;
+          top: 15%; }
+  #architecture #modules {
+    padding-top: 60px;
+    font-size: 16px; }
+    #architecture #modules img {
+      width: 90%;
+      height: auto;
+      border: 1px solid black;
+      box-shadow: black 0px 0px 20px 1px; }
+    #architecture #modules p {
+      margin-top: 25px !important; }
+    #architecture #modules h2 {
+      margin-bottom: 20px; }
+
+#publications, #source {
+  margin-bottom: 60px;
+  padding-top: 60px; }
+  #publications p, #source p {
+    font-size: 16px; }
+
+#source img:first-of-type {
+  height: 2.4em !important;
+  padding-top: 5px;
+  margin-left: 1px;
+  margin-right: -1px;
+  image-resolution: 100dpi !important;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor; }
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border-top: 3px solid black;
+  padding-top: 10px; }
+  footer a.fa {
+    font-size: 1.1em !important;
+    padding-left: 10px;
+    color: #455a64; }
+    footer a.fa:hover {
+      color: black; }
+
+@media (max-height: 425px) {
+  #architecture .img-frame {
+    margin-bottom: -20px !important; } }
+
+@media (max-width: 767px) {
+  #architecture .img-frame {
+    float: none !important;
+    width: 100% !important;
+    margin-top: 25px !important;
+    margin-bottom: 30px;
+    margin-left: 0px !important; }
+  #modules img {
+    width: 80% !important; }
+  #modules .col-sm-4 {
+    margin-top: 40px; }
+    #modules .col-sm-4 h3 {
+      padding-bottom: 15px; }
+  footer .text-right, footer .text-left {
+    text-align: center !important; } }

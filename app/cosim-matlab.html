@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Title -->
+	<title>Co-Simulation Framework</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome! -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Extra Fonts! -->
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Martel+Sans:300" rel="stylesheet">
+
+	<!-- CSS Source Files -->
+	<link href='css/cosim-matlab.css' rel='stylesheet' type="text/css">
+	<link href='css/nav-slide-animation.css' rel='stylesheet' type="text/css">
+	<link href="css/components/action-keys.css" rel="stylesheet" type="text/css">
+	<link href="css/components/vimeo-video.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Ahura Jami</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#architecture">Description</a>
+					</li>
+					<li>
+						<a href="#source">Source Code</a>
+					</li>
+					<li>
+						<a href="#publications">Publications</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Title and sub-title -->
+	<div id="home" class="jumbotron text-center bg-white">
+		<section class="title">
+			<h1>Co-Simulation Framework</h1>
+			<h3>A Framework for Simulation of Connected and Automated Vehicles</h3>
+		</section>
+	</div>
+
+	<!-- Video Frame -->
+	<div id="video" class="container-fluid">
+		<div class="video-wrap">
+			<div class="video-frame">
+				<iframe src="https://player.vimeo.com/video/216032716" frameborder="0"></iframe>
+				<p>
+					<a href="https://vimeo.com/216032716">Co-Simulation: A Quick Waltkhrough</a>
+					from
+					<a href="https://vimeo.com/user66238081">Ahura Jami</a> on
+					<a href="https://vimeo.com">Vimeo</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Watch Video and Source Code Buttons -->
+	<div class="container-fluid action-keys bg-white">
+		<div class="row">
+			<div class="col-sm-6 text-right">
+				<a class="action action-play">
+					<span class="glyphicon glyphicon-play"></span>Watch Video</a>
+			</div>
+			<div class="col-sm-6 text-left">
+				<a class="action" href="#source">
+					<span class="glyphicon glyphicon-link"></span>Source Code</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main Description Section -->
+	<div id="architecture" class="container-fluid bg-white">
+
+		<h1 class="text-center">Modular Architecture</h1>
+
+		<div class="container description">
+			<div class="text-description text-justify">
+				<p>
+					The Co-Sim is a highly modular matlab-based simulaton framework. It has been designed here in
+					<a style="color: #418eeb" href="http://www.ece.ucf.edu/~yfallah/index.html">Networked Systems Lab</a>
+					and is used specifically for vehicular active safety system analysis.
+				</p>
+
+				<div class="img-frame">
+					<img class="img-thumbnail" alt="Co-Simulation" src="images/CoSim-Matlab/Main Menu.png" />
+					<!-- <img class="img-thumbnail slideanim" alt="Co-Simulation" src="images/CoSim-Matlab/4 Way Stop Intersection.png" /> -->
+				</div>
+
+				The following components form the core of the simulator:
+				<ul>
+					<li>Mobility and Driving Module</li>
+					<li>Communication Network</li>
+					<li>Cooperative Collision Avoidance System</li>
+					<li>Driver Reaction Model</li>
+				</ul>
+
+				<p>
+					These components are interconnected and hence provide a comprehensive simulation environment. The simulator comes with an
+					easy-to-use Graphical User Interface that allows the user to effortlessly customize and build a desired environment.
+					Its modular design makes it easy to implement new algorithms and to integrate more components. Our researchers use this
+					framework to study and analyze the effect of entailed components on performance of the vehicle safety systems in a large
+					scale traffic scenario. The integrated driver model also allows us to study different driver behaviors and reactions
+					to a safety warning and to investigate its impact on overall traffic conditions.
+				</p>
+			</div>
+		</div>
+
+		<!-- Modules and Componentes -->
+		<div class="container">
+			<div id="modules" class="row text-center">
+
+				<h1>Modules</h1>
+
+				<div class="col-sm-4">
+					<h2 class="module1 vertical-align">Transportation Network</h2>
+					<img alt="Co-Simulation" src="images/CoSim-Matlab/Transportation.png" />
+
+					<p class="text-justify">
+						The Transportation Network Editor provides easy to use tools for building and editing any desired road traffic network. It
+						can also import a map, directly from
+						<a style="color: #418eeb" href="https://www.openstreetmap.org/#map=18/28.60108/-81.19863">OpenstreetMap</a>.
+					</p>
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="module2 vertical-align">Vehicle, Mobility and Communication</h2>
+					<img alt="Co-Simulation" src="images/CoSim-Matlab/Vehicle Editor.png" />
+
+					<p class="text-justify">
+						The Vehicle Editor lets users create and customize as many different vehicles as they desire. It allows you to set the core
+						parameters of components involvled in driving and simulating of vehiclular network.
+						<br /> The Vehicle-to-Vehicle communication is represented by a communication logic and a communication network model. It
+						can be represented by a simple mathematical model as a function of packet-error rate or can be carried out through
+						a look-up table.
+					</p>
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="module3 vertical-align">Safety Systems and Driver Model</h2>
+					<img alt="Co-Simulation" src="images/CoSim-Matlab/Module3.png" />
+
+					<p class="text-justify">
+						Other main components include driver's vision, on-board sensors, and communication devices. The Co-Sim uses an innovative
+						approach to simulate vehicle movements based on the data collected from these sources, as well as the information perceived
+						by the driver through his/her field-of-vision. The Co-Sim uses Car-Following Models to simulate vehicles movements.
+						Once safety systems detect a hazard, the mobility model automatically switches to a vehicle dynamics model which allows
+						for a more accurate and detailed analysis of the emergency situation.
+						<br />
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Source Code -->
+	<div id="source" class="container text-justify bg-white">
+		<h1>Source Code</h1>
+		<script src="./js/Utilities.js "></script>
+		<p>
+			We shifted our development platform to Unreal Engine and no longer work on the MATLAB version. However, we may still be able
+			to provide a light copy to interested individuals. Please
+			<span id="EAddress">
+				<script type="text/javascript">
+					document.write(HideEAddress('ahura', 'jami', 'gmail', 'com', 'contant me')); //
+				</script>
+			</span>
+			for more information.
+		</p>
+	</div>
+
+	<!-- Publications -->
+	<div id="publications" class="container text-justify bg-white">
+		<h1>Publication</h1>
+		<ol type="1" style="padding-left: 15px">
+			<li>
+				<p>
+					<b>Ahura Jami</b>
+					<i>(formerly Ahmad Jamialahmadi)</i>, Yaser P. Fallah, "Analysis of the Impact of Driver Behavior Models on Performance
+					of Forward Collision Warning Systems",
+					<i>IEEE CyberSciTech 2017 Conf.,</i> Orlando, USA, Nov. 6-10, 2017
+					<b>(Received the Best Paper Award)</b>
+				</p>
+			</li>
+		</ol>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container">
+		<div class="row">
+			<div class="col-sm-5 text-left">
+				&copy; 2017
+				<a href="http://www.ece.ucf.edu/~yfallah/index.html">Networked Systems Lab</a>
+			</div>
+			<div class="col-sm-7 text-right">
+				Designed By:
+				<a href="index.html">Ahura Jami</a>
+				<a class="fa fa-linkedin" style="padding-left: 4px;" href="https://www.linkedin.com/in/ahurajami/"></a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS Scripts -->
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<script src="js/SmoothScrolling.js"></script>
+	<script src="js/SlideAnimation.js"></script>
+	<script src="js/PlayVideo.js"></script>
+	<script src="js/AdjustHeight.js"></script>
+</body>
+
+</html>

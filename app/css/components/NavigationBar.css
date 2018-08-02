@@ -1,0 +1,26 @@
+.navbar {
+  margin-bottom: 0;
+  background-color: transparent;
+  z-index: 9999;
+  border: 0;
+  font-size: 18px !important;
+  font-family: 'Open Sans', sans-serif;
+  font-variant: small-caps;
+  line-height: 1.42857143 !important;
+  border-radius: 0; }
+  .navbar a {
+    transition: 0s;
+    color: #e3ebec !important; }
+  .navbar button {
+    background: transparent !important; }
+    .navbar button .icon-bar {
+      background-color: #e3ebec !important; }
+    .navbar button.navbar-toggle {
+      border: 2px solid #e3ebec; }
+    .navbar button.collapsed {
+      border-color: transparent !important; }
+  .navbar .navbar-nav li a:hover, .navbar .navbar-nav li.active a {
+    color: black !important;
+    background-color: #e3ebec !important; }
+  .navbar .navbar-nav li.active a {
+    font-weight: bold; }

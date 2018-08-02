@@ -1,0 +1,55 @@
+﻿.navbar
+{
+	margin-bottom: 0;
+	background-color: transparent;
+	z-index: 9999;
+	border: 0;
+	font-size: 18px !important;
+	font-family: 'Open Sans', sans-serif;
+	font-variant: small-caps;
+	line-height: 1.42857143 !important;
+	border-radius: 0;
+
+	a
+	{
+		transition: 0s;
+		color: #e3ebec !important;
+	}
+
+	button
+	{
+		background: transparent !important;
+
+		.icon-bar
+		{
+			background-color: #e3ebec !important;
+		}
+
+		&.navbar-toggle
+		{
+			border: 2px solid #e3ebec;
+		}
+
+		&.collapsed
+		{
+			border-color: transparent !important;
+		}
+	}
+
+	.navbar-nav
+	{
+		li
+		{
+			a:hover, &.active a
+			{
+				color: black !important;
+				background-color: #e3ebec !important;
+			}
+
+			&.active a
+			{
+				font-weight: bold;
+			}
+		}
+	}
+}

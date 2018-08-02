@@ -1,0 +1,32 @@
+/* Background colors */
+.bg-white {
+  background: #ffffff; }
+
+/* General Rules */
+body {
+  font-family: 'Martel Sans', Lato, sans-serif;
+  line-height: 1.8;
+  background: #ffffff;
+  color: black; }
+
+a {
+  text-decoration: none !important; }
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+
+h1 {
+  font-family: 'Lilita One', 'Passion One', cursive;
+  font-size: 4em;
+  font-variant: small-caps; }
+
+h2 {
+  font-family: 'Lilita One', 'Passion One', cursive;
+  font-size: 2.2em; }
+
+h4,
+h3,
+p {
+  font-family: 'Martel Sans', 'Quicksand', sans-serif; }

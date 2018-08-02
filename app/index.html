@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Title -->
+	<title>Ahura Jami</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome! -->
+	<!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
+	<!-- Extra Fonts! -->
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Martel+Sans:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Indie+Flower|Lobster" rel="stylesheet">
+
+	<!-- CSS Source Files -->
+	<link href='css/home.css' rel='stylesheet' type="text/css">
+	<!-- <link href='css/home-past-projects.css' rel='stylesheet' type="text/css"> -->
+	<link href='css/nav-slide-animation.css' rel='stylesheet' type="text/css">
+	<link href="css/components/action-keys.css" rel="stylesheet" type="text/css">
+	<link href="css/components/vimeo-video.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!--a class="navbar-brand" href="http://www.ece.ucf.edu/~yfallah/index.html">Networked Systems Lab</a-->
+				<a class="navbar-brand" href="#about">Ahura Jami</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#projects">Project</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Screen (First Page) -->
+	<div id="about" class="jumbotron bg-cover">
+		<div class="container">
+			<div class="row vertical-align">
+
+				<!-- Column for My Image -->
+				<div class="col-sm-6 my-img-column text-right">
+					<img class="img-circle" alt="Me" src="./images/Home/Me.jpg" />
+				</div>
+
+				<!-- Column for Description About Me -->
+				<div class="col-sm-6">
+					<div class="about">
+						<h2>Hi,</h2>
+						<p class="text-justify" style="font-variant: small-caps">
+							My name is
+							<span style="font-weight: bold">Ahura Jami</span>. I'm an Autonomous Vehicle Researcher and an Artificial Intelligence enthusiast. I hold a BSc. in
+							Aerospace Engineering and will soon graduate with a MSc. in Computer Science from the University of Central Florida.
+							<br> My expertise lies in simulation and modeling of advanced driver assistant systems in automated and connected vehicles.
+							I'm currently building a Reinforcement Learning solution within our Unreal Engine-based Connected Vehicules Co-Simulator.
+						</p>
+					</div>
+
+					<div id="menu-down">
+						<a href="#projects">
+							<span class="glyphicon glyphicon-menu-down"></span>
+							<span class="glyphicon glyphicon-menu-down"></span>
+							<span class="glyphicon glyphicon-menu-down"></span>
+							<span style="font-variant: small-caps"> See my current work </span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Portfolio Container -->
+	<div id="projects" class="container-fluid bg-white">
+		<div id="recent" class="container">
+			<section class="heading1 text-center">
+				<h1>Recent Project</h1>
+			</section>
+
+			<div class="row">
+				<div id="description" class="col-md-6">
+					<h2>Co-Simulation Framework</h2>
+					<h6>
+						<a href="http://www.ece.ucf.edu/~yfallah/index.html">&copy; Networked Systems Lab</a>
+					</h6>
+					<br />
+					<p class="text-justify">
+						Built from scratch and powered by Unreal Engine, Co-Sim is a comprehensive simulation framework designed specifically for
+						vehicular active safety system analysis. It comprises different domains of communication, transportation, and vehicle
+						safety systems. In addition, it incorporates a driver reaction model and a hazard detection package that rely on situational
+						data collected by local sensors or via communication. Using this tool, we can study and analyze the effect of entailed
+						components on performance of the safety system in a large scale traffic scenario.
+
+						<br />
+					</p>
+				</div>
+
+				<!-- Co-Simulation Images -->
+				<div class="col-md-6">
+					<figure class="img-frame slideanim">
+						<img class="img-thumbnail" alt="Co-Simulation" src="./images/Home/CoSim_UE4.png" />
+						<!-- <img class="img-thumbnail slideanim" alt="Co-Simulation" src="Content/images/Unreal Co-Sim.png" /> -->
+						<figcaption class="text-center">
+							<div class="action-keys">
+								<a class="action action-play">
+									<span class="fab fa-vimeo-square fa-lg"></span>Watch Demo</a>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Video Frame -->
+	<div id="video" class="container-fluid">
+		<div class="video-wrap">
+			<div class="video-frame">
+				<iframe src="https://player.vimeo.com/video/252441087" frameborder="0"></iframe>
+				<p>
+					<a href="https://vimeo.com/252441087">Co-Simulator: A Cooperative Collision Avoidance System Demo - UE4</a> from
+					<a href="https://vimeo.com/user66238081">Ahura Jami</a> on
+					<a href="https://vimeo.com">Vimeo</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="projects" class="container-fluid bg-white">
+		<div id="list" class="container">
+			<h1 class="heading1 text-center">Other Projects</h1>
+
+			<div class="row">
+				<div class="col-md-6 project-tile-wrapper">
+					<div class="project-tile">
+						<!-- <h1>$this->electionName</h1> -->
+						<img class="project-image" alt="Co-Simulation" src="./images/CoSim-Matlab/Vehicle Editor.png"></img>
+						<div class="info sweep text-center">
+							<h2 class="title text-center">CoSim - MATLAB</h2>
+							<hr>
+							<p>
+								<!-- Funded by Qatar National Science Fund (QNRF), the Co-Sim is a comprehensive simulation framework designed specifically for
+								vehicular active safety system analysis. -->
+								The early prototype of the Co-Sim that was developed in MATLAB.
+							</p>
+
+							<section>
+								<div class="action-keys">
+									<a href="./cosim-matlab.html" class="action">Project Page</a>
+								</div>
+							</section>
+
+						</div>
+					</div>
+
+					<div class="technologies text-right">
+						<h4>CoSim - MATLAB</h4>
+						<img class="technology-icon" src="images/Home/Matlab-logo.jpg" data-toggle="tooltip" title="MATLAB" />
+						<img class="technology-icon" src="images/Home/Java-logo-resized.png" data-toggle="tooltip" title="Java" />
+						<span class="html-icon" data-toggle="tooltip" title="HTML5">
+							<span class="fab fa-html5 fa-lg"></span>
+							<span class="brand">HTML</span>
+						</span>
+					</div>
+				</div>
+
+				<div class="col-md-6 project-tile-wrapper">
+					<div class="project-tile">
+						<!-- <h1>$this->electionName</h1> -->
+						<img class="project-image" alt="Co-Simulation" src="./images/MARS/Wall_e.jpg"></img>
+						<div class="info sweep text-center">
+							<h2 class="title text-center">MARS</h2>
+							<hr>
+							<p class="text-center">
+								Inspired by Sim.I.Am, MARS is a MATLAB-based robotic simulation platform built for NASA Sample Return Robot Challenge for
+								Interactive Robotic Laboratory at West Virginia University.
+
+								<section>
+									<div class="action-keys">
+										<a class="action">GitHub - Soon</a>
+									</div>
+								</section>
+							</p>
+						</div>
+					</div>
+					<div class="technologies text-right">
+						<h4>MARS</h4>
+						<img class="technology-icon" src="./images/Home/Matlab-logo.jpg" data-toggle="tooltip" title="MATLAB" />
+						<img class="technology-icon" src="./images/Home/Java-logo-resized.png" data-toggle="tooltip" title="Java" />
+						<span class="html-icon" data-toggle="tooltip" title="HTML5">
+							<span class="fab fa-html5 fa-lg"></span>
+							<span class="brand">HTML</span>
+						</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact Me -->
+	<div id="contact" class="container-fluid bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5">
+					<section class="heading2 text-left">
+						<h1>Contact</h1>
+					</section>
+					<h3 style="color: black; ">Ahura Jami</h3>
+					<h4 style="color: black; ">Graduate Research Assistant</h4>
+					<p>
+						<img id="pegasus" width="23" height="23" src="./images/Home/UCF_Pegasus.jpg" />
+						<span id="UCF-text">University of Central Florida</span>
+						<br />
+						<span class="glyphicon glyphicon-map-marker"></span>
+						HEC 338
+						<br />
+						<span class="glyphicon glyphicon-phone"></span>
+						<img src="./images/Home/myNumber.png" />
+						<br />
+						<span class="glyphicon glyphicon-envelope"></span>
+						<script src="./js/Utilities.js "></script>
+						<span id="EAddress">
+							<script type="text/javascript">
+								document.write(HideEAddress('ahura', 'jami', 'gmail', 'com', 'Email Me!')); //
+							</script>
+						</span>
+						<noscript>
+							<em>Email address protected by JavaScript.
+								<BR> Please enable JavaScript to contact me.</em>
+						</noscript>
+					</p>
+				</div>
+				<div class="col-sm-7">
+					<div id="googleMap"></div>
+					<script src="./js/GoogleMap.js "></script>
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs11hGQyAIpCtsU5q1ctqXeTeaeIWvO50&callback=myMap"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container">
+		<div class="row">
+			<div class="col-sm-5 text-left">
+				<p>&copy; 2017 Ahura Jami</p>
+			</div>
+			<div class="col-sm-7 text-right">
+				<a style="position: relative;" href=" https://answers.unrealengine.com/users/454853/index.html" data-toggle="tooltip" data-placement="top"
+				    title="UE4 AnswerHub">
+					<img class="image-icons" src="./images/Home/UE4_Icon.png" width="23px" height="23px" />
+				</a>
+				<a href="https://github.com/Ahura-Jami" data-toggle="tooltip" data-placement="top" title="GitHub">
+					<span class="fab fa-github fa-lg"></span>
+				</a>
+				<a href="https://www.linkedin.com/in/ahurajami/" data-toggle="tooltip" data-placement="top " title="LinkedIn">
+					<span class="fab fa-linkedin-in fa-lg"></span>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JS Scripts -->
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<script src="./js/NavbarColorChange.js "></script>
+	<script src="./js/SmoothScrolling.js "></script>
+	<script src="./js/SlideAnimation.js "></script>
+	<script src="./js/PlayVideo.js"></script>
+</body>
+
+</html>
